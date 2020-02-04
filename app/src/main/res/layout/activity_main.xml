@@ -17,31 +17,36 @@
         android:id="@+id/single_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:weightSum="4">
         <ro.doruchidean.checkablebutton.CheckableButton
             android:id="@+id/btn_cat"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             app:text="@string/label_cat"
             />
         <ro.doruchidean.checkablebutton.CheckableButton
             android:id="@+id/btn_dog"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             app:text="@string/label_dog"
             />
         <ro.doruchidean.checkablebutton.CheckableButton
             android:id="@+id/btn_hamster"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             app:text="@string/label_hamster"
             />
         <ro.doruchidean.checkablebutton.CheckableImageButton
             android:id="@+id/btn_android"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             app:src="@drawable/ic_android"
-            app:scaleType="fitXY"
+            app:scaleType="centerCrop"
             />
     </ro.doruchidean.checkablebutton.SingleCheckButtonsGroup>
 

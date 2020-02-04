@@ -16,25 +16,30 @@ dependencies {
 ```xml
 <ro.doruchidean.checkablebutton.SingleCheckButtonsGroup
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:weightSum="4">
         <ro.doruchidean.checkablebutton.CheckableButton
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             app:text="@string/label_cat"
             app:isChecked="true"
             />
         <ro.doruchidean.checkablebutton.CheckableButton
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             app:text="@string/label_dog"
             />
         <ro.doruchidean.checkablebutton.CheckableButton
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             app:text="@string/label_hamster"
             />
         <ro.doruchidean.checkablebutton.CheckableImageButton
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             app:src="@drawable/ic_android"
             app:scaleType="fitXY"
@@ -67,10 +72,10 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-##Available xml attributes##
+#Available xml attributes#
 ```xml
-<!--CheckableButton-->
 <resources>
+<!--CheckableButton-->
         <attr name="text" format="string"/>
         <attr name="isChecked" format="boolean"/>
         <attr name="buttonHeight" format="dimension"/>
