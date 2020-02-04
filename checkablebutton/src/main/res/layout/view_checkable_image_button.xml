@@ -4,7 +4,7 @@
     <ImageView
         android:id="@+id/btn_checkable_image"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/checkable_button_height"
+        android:layout_height="match_parent"
         android:background="@drawable/bg_yellow_border_button_state"
         android:paddingStart="@dimen/horizontal_padding"
         android:paddingEnd="@dimen/horizontal_padding"
