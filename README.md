@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.doruchidean:CheckableButtons:v1.0.1'
+    implementation 'com.github.doruchidean:CheckableButtons:v1.0.2'
 }
 ```
 
