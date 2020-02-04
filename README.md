@@ -72,28 +72,28 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-#Available xml attributes#
+**Available xml attributes**
 ```xml
 <resources>
-<!--CheckableButton-->
-        <attr name="text" format="string"/>
-        <attr name="isChecked" format="boolean"/>
-        <attr name="buttonHeight" format="dimension"/>
+    <!--CheckableButton-->
+    <attr name="text" format="string"/>
+    <attr name="isChecked" format="boolean"/>
+    <attr name="buttonHeight" format="dimension"/>
 
     
-<!--CheckableImageButton-->
-        <attr name="src" format="reference"/>
-        <attr name="isChecked"/>
-        <attr name="buttonHeight"/>
-        <attr name="scaleType">
-            <enum name="matrix"/>
-            <enum name="fitXY"/>
-            <enum name="fitStart"/>
-            <enum name="fitCenter"/>
-            <enum name="fitEnd"/>
-            <enum name="center"/>
-            <enum name="centerCrop"/>
-            <enum name="centerInside"/>
-        </attr>  
+    <!--CheckableImageButton-->
+    <attr name="src" format="reference"/>
+    <attr name="isChecked"/>
+    <attr name="buttonHeight"/>
+    <attr name="scaleType">
+        <enum name="matrix"/>
+        <enum name="fitXY"/>
+        <enum name="fitStart"/>
+        <enum name="fitCenter"/>
+        <enum name="fitEnd"/>
+        <enum name="center"/>
+        <enum name="centerCrop"/>
+        <enum name="centerInside"/>
+    </attr>  
 </resources>  
 ```
