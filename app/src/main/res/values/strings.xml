@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CheckableButtonExample</string>
+    <string name="label_single_group">Single check group</string>
+    <string name="label_cat">Cat</string>
+    <string name="label_dog">Dog</string>
+    <string name="label_hamster">Hamster</string>
+    <string name="label_multi_group">Multiple check group</string>
+    <string name="label_bacon">Bacon</string>
+    <string name="label_crickets">Crickets</string>
+    <string name="format_food_preference">My favorite foods include: %s</string>
+    <string name="format_pet_preference">My favorite pet is %s</string>
+    <string name="label_cat_pet">a cat</string>
+    <string name="label_dog_pet">a dog</string>
+    <string name="label_hamster_pet">a hamster</string>
+    <string name="label_android_pet">an android</string>
+    <string name="label_pizza">Pizza</string>
+    <string name="label_fast_food">Fast Food</string>
+</resources>

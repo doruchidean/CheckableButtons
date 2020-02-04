@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/btn_checkable_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/checkable_button_height"
+        android:background="@drawable/bg_yellow_border_button_state"
+        android:paddingStart="@dimen/horizontal_padding"
+        android:paddingEnd="@dimen/horizontal_padding"
+        android:layout_margin="@dimen/half_horizontal_padding"
+        android:scaleType="centerInside"
+        />
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:src="@drawable/ic_check_selected"
+        android:elevation="4dp"
+        />
+
+</merge>
