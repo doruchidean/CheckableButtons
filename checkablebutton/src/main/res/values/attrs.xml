@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="CheckableButton" parent="OurSpinner">
+    <declare-styleable name="CheckableButton">
         <attr name="text" format="string"/>
         <attr name="isChecked" format="boolean"/>
+        <attr name="buttonHeight" format="dimension"/>
     </declare-styleable>
 
     <declare-styleable name="CheckableImageButton">
         <attr name="src" format="reference"/>
         <attr name="isChecked"/>
+        <attr name="buttonHeight"/>
         <attr name="scaleType">
             <enum name="matrix" value="0" />
             <enum name="fitXY" value="1" />

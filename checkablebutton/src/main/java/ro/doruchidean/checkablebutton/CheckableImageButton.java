@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -38,16 +39,24 @@ public class CheckableImageButton extends BaseCheckableButton {
         int imageResId;
         boolean isChecked;
         int scaleType;
+        int buttonHeight;
         try {
             imageResId = attrsArray.getResourceId(R.styleable.CheckableImageButton_src, 0);
             isChecked = attrsArray.getBoolean(R.styleable.CheckableImageButton_isChecked, false);
             scaleType = attrsArray.getInt(R.styleable.CheckableImageButton_scaleType, -1);
+            buttonHeight = attrsArray.getDimensionPixelSize(R.styleable.CheckableImageButton_buttonHeight, -1);
         } finally {
             attrsArray.recycle();
         }
-        if (scaleType > 0) {
+        if (scaleType >= 0) {
             button.setScaleType(getScaleType(scaleType));
         }
+        if (buttonHeight >= 0) {
+            ViewGroup.LayoutParams params = button.getLayoutParams();
+            params.height = buttonHeight;
+            button.setLayoutParams(params);
+        }
+
         button.setImageResource(imageResId);
         setChecked(isChecked);
     }

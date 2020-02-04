@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.doruchidean:CheckableButtons:v1.0.2'
+    implementation 'com.github.doruchidean:CheckableButtons:v1.0.3'
 }
 ```
 
@@ -39,7 +39,7 @@ dependencies {
             app:src="@drawable/ic_android"
             app:scaleType="fitXY"
             />
-    </ro.doruchidean.checkablebutton.SingleCheckButtonsGroup>
+</ro.doruchidean.checkablebutton.SingleCheckButtonsGroup>
 ```
 
 ```java
@@ -65,4 +65,30 @@ public class MainActivity extends AppCompatActivity {
         };
     }
 }
+```
+
+##Available xml attributes##
+```xml
+<!--CheckableButton-->
+<resources>
+        <attr name="text" format="string"/>
+        <attr name="isChecked" format="boolean"/>
+        <attr name="buttonHeight" format="dimension"/>
+
+    
+<!--CheckableImageButton-->
+        <attr name="src" format="reference"/>
+        <attr name="isChecked"/>
+        <attr name="buttonHeight"/>
+        <attr name="scaleType">
+            <enum name="matrix"/>
+            <enum name="fitXY"/>
+            <enum name="fitStart"/>
+            <enum name="fitCenter"/>
+            <enum name="fitEnd"/>
+            <enum name="center"/>
+            <enum name="centerCrop"/>
+            <enum name="centerInside"/>
+        </attr>  
+</resources>  
 ```
