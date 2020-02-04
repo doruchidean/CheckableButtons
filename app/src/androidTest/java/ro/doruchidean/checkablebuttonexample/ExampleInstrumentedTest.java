@@ -1,4 +1,4 @@
-package ro.lifeishard.checkablebutton;
+package ro.doruchidean.checkablebuttonexample;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("ro.lifeishard.checkablebutton.test", appContext.getPackageName());
+        assertEquals("ro.doruchidean.checkablebuttonexample", appContext.getPackageName());
     }
 }

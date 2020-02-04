@@ -13,37 +13,37 @@
         android:layout_height="wrap_content"
         android:text="@string/label_single_group"/>
 
-    <ro.lifeishard.checkablebutton.SingleCheckButtonsGroup
+    <ro.doruchidean.checkablebutton.SingleCheckButtonsGroup
         android:id="@+id/single_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical">
-        <ro.lifeishard.checkablebutton.CheckableButton
+        <ro.doruchidean.checkablebutton.CheckableButton
             android:id="@+id/btn_cat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:text="@string/label_cat"
             />
-        <ro.lifeishard.checkablebutton.CheckableButton
+        <ro.doruchidean.checkablebutton.CheckableButton
             android:id="@+id/btn_dog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:text="@string/label_dog"
             />
-        <ro.lifeishard.checkablebutton.CheckableButton
+        <ro.doruchidean.checkablebutton.CheckableButton
             android:id="@+id/btn_hamster"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:text="@string/label_hamster"
             />
-        <ro.lifeishard.checkablebutton.CheckableImageButton
+        <ro.doruchidean.checkablebutton.CheckableImageButton
             android:id="@+id/btn_android"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:src="@drawable/ic_android"
             app:scaleType="fitXY"
             />
-    </ro.lifeishard.checkablebutton.SingleCheckButtonsGroup>
+    </ro.doruchidean.checkablebutton.SingleCheckButtonsGroup>
 
 
     <TextView
@@ -52,36 +52,36 @@
         android:text="@string/label_multi_group"
         />
 
-    <ro.lifeishard.checkablebutton.MultipleCheckButtonsGroup
+    <ro.doruchidean.checkablebutton.MultipleCheckButtonsGroup
         android:id="@+id/multi_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical">
-        <ro.lifeishard.checkablebutton.CheckableButton
+        <ro.doruchidean.checkablebutton.CheckableButton
             android:id="@+id/btn_bacon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:text="@string/label_bacon"
             />
-        <ro.lifeishard.checkablebutton.CheckableImageButton
+        <ro.doruchidean.checkablebutton.CheckableImageButton
             android:id="@+id/btn_pizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:src="@drawable/ic_local_pizza"
             />
-        <ro.lifeishard.checkablebutton.CheckableButton
+        <ro.doruchidean.checkablebutton.CheckableButton
             android:id="@+id/btn_crickets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:text="@string/label_crickets"
             />
-        <ro.lifeishard.checkablebutton.CheckableImageButton
+        <ro.doruchidean.checkablebutton.CheckableImageButton
             android:id="@+id/btn_fast_food"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:src="@drawable/ic_fastfood"
             />
-    </ro.lifeishard.checkablebutton.MultipleCheckButtonsGroup>
+    </ro.doruchidean.checkablebutton.MultipleCheckButtonsGroup>
 
     <TextView
         android:id="@+id/tv_favorite_pet"

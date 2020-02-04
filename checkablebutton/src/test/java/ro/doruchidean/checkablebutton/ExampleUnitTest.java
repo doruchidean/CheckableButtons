@@ -1,4 +1,4 @@
-package ro.lifeishard.checkablebuttonexample;
+package ro.doruchidean.checkablebutton;
 
 import org.junit.Test;
 

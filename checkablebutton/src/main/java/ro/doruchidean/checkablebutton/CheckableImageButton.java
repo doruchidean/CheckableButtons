@@ -1,4 +1,4 @@
-package ro.lifeishard.checkablebutton;
+package ro.doruchidean.checkablebutton;
 
 import android.content.Context;
 import android.content.res.TypedArray;

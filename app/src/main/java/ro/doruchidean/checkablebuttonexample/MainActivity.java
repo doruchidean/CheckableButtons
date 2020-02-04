@@ -1,4 +1,4 @@
-package ro.lifeishard.checkablebuttonexample;
+package ro.doruchidean.checkablebuttonexample;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,8 @@ import android.widget.TextView;
 import java.util.Arrays;
 import java.util.LinkedList;
 
-import ro.lifeishard.checkablebutton.MultipleCheckButtonsGroup;
-import ro.lifeishard.checkablebutton.SingleCheckButtonsGroup;
+import ro.doruchidean.checkablebutton.MultipleCheckButtonsGroup;
+import ro.doruchidean.checkablebutton.SingleCheckButtonsGroup;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -96,9 +96,15 @@ public class MainActivity extends AppCompatActivity {
                         }
                         break;
                 }
-                String values = Arrays.toString(foodValues.toArray())
-                        .replace("[", "")
-                        .replace("]", "");
+                String values;
+                if (foodValues.size() == 4) {
+                    values = "all food ever.";
+                } else {
+                    values = Arrays.toString(foodValues.toArray())
+                            .replace("[", "")
+                            .replace("]", "");
+                }
+
                 tvFavFood.setText(String.format(label, values));
             }
         };
