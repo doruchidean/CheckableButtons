@@ -11,7 +11,7 @@
         <attr name="src" format="reference"/>
         <attr name="isChecked"/>
         <attr name="buttonHeight"/>
-        <attr name="scaleType">
+        <attr name="imageScaleType">
             <enum name="matrix" value="0" />
             <enum name="fitXY" value="1" />
             <enum name="fitStart" value="2" />

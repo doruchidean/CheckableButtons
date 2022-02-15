@@ -46,7 +46,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             app:src="@drawable/ic_android"
-            app:scaleType="centerCrop"
+            app:imageScaleType="centerCrop"
             />
     </ro.doruchidean.checkablebutton.SingleCheckButtonsGroup>
 

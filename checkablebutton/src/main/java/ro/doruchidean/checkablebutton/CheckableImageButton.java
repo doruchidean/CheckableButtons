@@ -43,7 +43,7 @@ public class CheckableImageButton extends BaseCheckableButton {
         try {
             imageResId = attrsArray.getResourceId(R.styleable.CheckableImageButton_src, 0);
             isChecked = attrsArray.getBoolean(R.styleable.CheckableImageButton_isChecked, false);
-            scaleType = attrsArray.getInt(R.styleable.CheckableImageButton_scaleType, -1);
+            scaleType = attrsArray.getInt(R.styleable.CheckableImageButton_imageScaleType, -1);
             buttonHeight = attrsArray.getDimensionPixelSize(R.styleable.CheckableImageButton_buttonHeight, -1);
         } finally {
             attrsArray.recycle();
