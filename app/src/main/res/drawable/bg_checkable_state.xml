@@ -3,11 +3,11 @@
 
     <item
         android:state_selected="true"
-        android:drawable="@drawable/bg_yellow_border_rounded"/>
+        android:drawable="@drawable/bg_selected_border"/>
 
     <item
         android:state_selected="false"
-        android:drawable="@drawable/bg_gray_stroke_rounded"
+        android:drawable="@drawable/bg_unselected_border"
         />
 
 </selector>

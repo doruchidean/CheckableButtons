@@ -5,12 +5,16 @@
         <attr name="text" format="string"/>
         <attr name="isChecked" format="boolean"/>
         <attr name="buttonHeight" format="dimension"/>
+        <attr name="cornerIcon" format="reference"/>
+        <attr name="background" format="reference"/>
     </declare-styleable>
 
     <declare-styleable name="CheckableImageButton">
         <attr name="src" format="reference"/>
         <attr name="isChecked"/>
         <attr name="buttonHeight"/>
+        <attr name="cornerIcon"/>
+        <attr name="background"/>
         <attr name="imageScaleType">
             <enum name="matrix" value="0" />
             <enum name="fitXY" value="1" />

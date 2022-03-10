@@ -39,18 +39,28 @@ public class CheckableButton extends BaseCheckableButton {
         String label;
         boolean isChecked;
         int buttonHeight;
+        int ivCheckIcon;
+        int background;
         try {
             label = attrsArray.getString(R.styleable.CheckableButton_text);
             isChecked = attrsArray.getBoolean(R.styleable.CheckableButton_isChecked, false);
             buttonHeight = attrsArray.getDimensionPixelSize(R.styleable.CheckableButton_buttonHeight, -1);
+            ivCheckIcon = attrsArray.getResourceId(R.styleable.CheckableButton_cornerIcon, -1);
+            background = attrsArray.getResourceId(R.styleable.CheckableButton_background, -1);
         } finally {
             attrsArray.recycle();
         }
         button.setText(label);
+        if (background != -1) {
+            button.setBackgroundResource(background);
+        }
         if (buttonHeight >= 0) {
             ViewGroup.LayoutParams params = button.getLayoutParams();
             params.height = buttonHeight;
             button.setLayoutParams(params);
+        }
+        if (ivCheckIcon != -1) {
+            ivCheck.setImageResource(ivCheckIcon);
         }
         setChecked(isChecked);
     }

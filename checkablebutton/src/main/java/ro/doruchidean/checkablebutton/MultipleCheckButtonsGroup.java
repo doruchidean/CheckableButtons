@@ -52,7 +52,7 @@ public class MultipleCheckButtonsGroup extends LinearLayout {
         checkableButton.setOnClickListener(onButtonClickListener);
     }
 
-    private OnClickListener onButtonClickListener = new OnClickListener() {
+    private final OnClickListener onButtonClickListener = new OnClickListener() {
         @Override
         public void onClick(View v) {
             BaseCheckableButton b = (BaseCheckableButton) v;

@@ -25,6 +25,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             app:text="@string/label_cat"
+            app:cornerIcon="@drawable/ic_check_selected"
+            app:background="@drawable/bg_checkable_state"
             />
         <ro.doruchidean.checkablebutton.CheckableButton
             android:id="@+id/btn_dog"
@@ -32,6 +34,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             app:text="@string/label_dog"
+            app:cornerIcon="@drawable/ic_check_selected"
+            app:background="@drawable/bg_checkable_state"
             />
         <ro.doruchidean.checkablebutton.CheckableButton
             android:id="@+id/btn_hamster"
@@ -39,6 +43,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             app:text="@string/label_hamster"
+            app:cornerIcon="@drawable/ic_check_selected"
+            app:background="@drawable/bg_checkable_state"
             />
         <ro.doruchidean.checkablebutton.CheckableImageButton
             android:id="@+id/btn_android"
@@ -47,9 +53,10 @@
             android:layout_height="wrap_content"
             app:src="@drawable/ic_android"
             app:imageScaleType="centerCrop"
+            app:cornerIcon="@drawable/ic_check_selected"
+            app:background="@drawable/bg_checkable_state"
             />
     </ro.doruchidean.checkablebutton.SingleCheckButtonsGroup>
-
 
     <TextView
         android:layout_width="match_parent"
@@ -67,24 +74,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:text="@string/label_bacon"
+            app:cornerIcon="@drawable/ic_check_selected"
+            app:background="@drawable/bg_checkable_state"
             />
         <ro.doruchidean.checkablebutton.CheckableImageButton
             android:id="@+id/btn_pizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:src="@drawable/ic_local_pizza"
+            app:cornerIcon="@drawable/ic_check_selected"
+            app:background="@drawable/bg_checkable_state"
             />
         <ro.doruchidean.checkablebutton.CheckableButton
             android:id="@+id/btn_crickets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:text="@string/label_crickets"
+            app:cornerIcon="@drawable/ic_check_selected"
+            app:background="@drawable/bg_checkable_state"
             />
         <ro.doruchidean.checkablebutton.CheckableImageButton
             android:id="@+id/btn_fast_food"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:src="@drawable/ic_fastfood"
+            app:cornerIcon="@drawable/ic_check_selected"
+            app:background="@drawable/bg_checkable_state"
             />
     </ro.doruchidean.checkablebutton.MultipleCheckButtonsGroup>
 

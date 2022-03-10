@@ -26,18 +26,24 @@ dependencies {
             android:layout_height="wrap_content"
             app:text="@string/label_cat"
             app:isChecked="true"
+            app:ivCheckIcon="@drawable/ic_check_selected"
+            app:background="@drawable/bg_checkable_state"
             />
         <ro.doruchidean.checkablebutton.CheckableButton
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             app:text="@string/label_dog"
+            app:ivCheckIcon="@drawable/ic_check_selected"
+            app:background="@drawable/bg_checkable_state"
             />
         <ro.doruchidean.checkablebutton.CheckableButton
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             app:text="@string/label_hamster"
+            app:ivCheckIcon="@drawable/ic_check_selected"
+            app:background="@drawable/bg_checkable_state"
             />
         <ro.doruchidean.checkablebutton.CheckableImageButton
             android:layout_width="0dp"
@@ -45,6 +51,8 @@ dependencies {
             android:layout_height="wrap_content"
             app:src="@drawable/ic_android"
             app:scaleType="fitXY"
+            app:ivCheckIcon="@drawable/ic_check_selected"
+            app:background="@drawable/bg_checkable_state"
             />
 </ro.doruchidean.checkablebutton.SingleCheckButtonsGroup>
 ```
@@ -81,12 +89,16 @@ public class MainActivity extends AppCompatActivity {
     <attr name="text" format="string"/>
     <attr name="isChecked" format="boolean"/>
     <attr name="buttonHeight" format="dimension"/>
+    <attr name="checkIcon" format="reference"/>
+    <attr name="background" format="reference"/>
 
     
     <!--CheckableImageButton-->
     <attr name="src" format="reference"/>
     <attr name="isChecked"/>
     <attr name="buttonHeight"/>
+    <attr name="checkIcon"/>
+    <attr name="background"/>
     <attr name="scaleType">
         <enum name="matrix"/>
         <enum name="fitXY"/>

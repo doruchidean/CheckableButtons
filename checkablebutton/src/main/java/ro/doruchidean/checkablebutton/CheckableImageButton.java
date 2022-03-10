@@ -40,13 +40,20 @@ public class CheckableImageButton extends BaseCheckableButton {
         boolean isChecked;
         int scaleType;
         int buttonHeight;
+        int ivCheckIcon;
+        int background;
         try {
             imageResId = attrsArray.getResourceId(R.styleable.CheckableImageButton_src, 0);
             isChecked = attrsArray.getBoolean(R.styleable.CheckableImageButton_isChecked, false);
             scaleType = attrsArray.getInt(R.styleable.CheckableImageButton_imageScaleType, -1);
             buttonHeight = attrsArray.getDimensionPixelSize(R.styleable.CheckableImageButton_buttonHeight, -1);
+            ivCheckIcon = attrsArray.getResourceId(R.styleable.CheckableImageButton_cornerIcon, -1);
+            background = attrsArray.getResourceId(R.styleable.CheckableButton_background, -1);
         } finally {
             attrsArray.recycle();
+        }
+        if (background != -1) {
+            button.setBackgroundResource(background);
         }
         if (scaleType >= 0) {
             button.setScaleType(getScaleType(scaleType));
@@ -55,6 +62,9 @@ public class CheckableImageButton extends BaseCheckableButton {
             ViewGroup.LayoutParams params = button.getLayoutParams();
             params.height = buttonHeight;
             button.setLayoutParams(params);
+        }
+        if (ivCheckIcon != -1) {
+            ivCheck.setImageResource(ivCheckIcon);
         }
 
         button.setImageResource(imageResId);
