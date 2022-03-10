@@ -5,7 +5,6 @@
         android:id="@+id/btn_checkable_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_checkable_state"
         android:paddingStart="@dimen/horizontal_padding"
         android:paddingEnd="@dimen/horizontal_padding"
         android:layout_margin="@dimen/half_horizontal_padding"
