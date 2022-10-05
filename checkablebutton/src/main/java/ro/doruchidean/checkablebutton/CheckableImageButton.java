@@ -12,8 +12,8 @@ import androidx.annotation.Nullable;
 
 public class CheckableImageButton extends BaseCheckableButton {
 
-    ImageView button;
-    ImageView ivCheck;
+    public ImageView button;
+    public ImageView ivCheck;
     private boolean isChecked;
 
     public CheckableImageButton(@NonNull Context context,

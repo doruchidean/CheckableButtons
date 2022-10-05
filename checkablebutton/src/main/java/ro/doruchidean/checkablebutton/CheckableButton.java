@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 
 public class CheckableButton extends BaseCheckableButton {
 
-    TextView button;
+    public TextView button;
     private ImageView ivCheck;
     private boolean isChecked;
 
